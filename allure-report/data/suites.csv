@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11645","login test","chromium","2026-03-10","passed","2026-03-10","","Login.spec.ts","",""
+"","5510","login Page Logo Verify","chromium","2026-03-10","passed","2026-03-10","","Login.spec.ts","",""

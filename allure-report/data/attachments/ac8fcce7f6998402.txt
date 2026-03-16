@@ -1,0 +1,4 @@
+Exception occurred while clicking 'Login': Error: locator.click: Unexpected token "locator(" while parsing css selector "page.locator("button[type='submit'] span")". Did you mean to CSS.escape it?
+Call log:
+  - waiting for page.locator("button[type='submit'] span")
+

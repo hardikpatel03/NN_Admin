@@ -1,0 +1,14 @@
+[
+  {
+    "testName": "Valid login",
+    "email": "hardikp@solguruz.com",
+    "password": "Asd123!@#",
+    "expected": "success"
+  },
+  {
+    "testName": "Invalid login",
+    "email": "Test@solguruz.com",
+    "password": "ASD123!@#",
+    "expected": "failure"
+  }
+]
