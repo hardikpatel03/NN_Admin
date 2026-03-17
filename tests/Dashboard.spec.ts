@@ -3,6 +3,7 @@ import { test, expect, chromium, Browser, Page } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { TestConfig } from '../test.config';
+import ENV from '../config/env';
 
 let browser: Browser;
 let page: Page;
@@ -17,7 +18,8 @@ browser = await chromium.launch();
     const context = await browser.newContext();
     page = await context.newPage();
     config = new TestConfig();
-    await page.goto(config.appUrl);
+   // await page.goto(config.appUrl);
+    await page.goto(ENV.baseURL);
     loginPage = new LoginPage(page);
     dashboardPage = new DashboardPage(page);
      await loginPage.setEmail(config.email);

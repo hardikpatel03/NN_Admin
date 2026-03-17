@@ -5,6 +5,7 @@ import { ShiftsPage } from '../pages/ShiftsPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { RandomDataUtil } from '../utils/randomDataGenerator';
 import { TestConfig } from '../test.config';
+import ENV from '../config/env';
 
 let browser: Browser;
 let page: Page;
@@ -20,7 +21,8 @@ test.describe('Login Test Suite', () => {
         const context = await browser.newContext();
         page = await context.newPage();
         config = new TestConfig();
-        await page.goto(config.appUrl); //Navigate to application URL 
+        //await page.goto(config.appUrl); //Navigate to application URL 
+        await page.goto(ENV.baseURL);
         loginPage = new LoginPage(page);
         dashboardPage = new DashboardPage(page);
         shiftsPage = new ShiftsPage(page);
